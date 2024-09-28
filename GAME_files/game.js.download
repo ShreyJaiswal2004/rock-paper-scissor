@@ -1,0 +1,53 @@
+const choices = [`rock`,`paper`,`scissor`];
+const playerdisplay = document.getElementById(`playerdisplay`);
+const resultdisplay = document.getElementById(`resultdisplay`);
+const computerdisplay = document.getElementById(`computerdisplay`);
+
+
+
+
+function playgame(playerchoices){
+    const computerchoices = choices[Math.floor(Math.random() * 3)];
+let result ="";
+
+if(playerchoices === computerchoices){
+    result = `its a tie`;
+
+
+}
+
+
+
+else{
+    switch(playerchoices){
+        case `rock`:
+          result =  (computerchoices ===`scissor`) ? `you win`:`you loss` ;  
+       
+       break;
+       
+
+       case `paper`:
+        result =  (computerchoices ===`rock`) ? `you win`:`you loss` ;  
+     
+     break;
+             
+
+
+     case `scissor`:
+        result =  (computerchoices ===`paper`) ? `you win`:`you loss` ;  
+     
+     break;
+      
+        
+    }
+      }
+           playerdisplay.textContent = `player: ${playerchoices}`;
+           computerdisplay.textContent = `computer: ${computerchoices}`;
+           resultdisplay.textContent = result;
+    }
+       
+
+
+  
+    
+

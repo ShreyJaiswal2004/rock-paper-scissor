@@ -1,0 +1,66 @@
+body{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+
+h1{
+    font-size: 3.5rem;
+    color: rgb(7, 7, 7);
+}
+
+
+
+.choices{
+    margin-bottom: 30px;
+}
+
+
+
+
+.choices button{
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0%;
+    border-radius: 200px;
+    background-color: aqua;
+    cursor: pointer;
+    
+}
+
+
+
+.choices button:hover{
+    background-color: aquamarine;
+}
+
+
+
+
+
+#playerdisplay{
+    font-size: 2.5rem;
+
+
+
+}
+
+
+
+#computerdisplay{
+    font-size: 2.5rem;
+
+
+    
+}
+
+
+#resultdisplay{
+    font-size: 5rem;
+
+
+    
+}
